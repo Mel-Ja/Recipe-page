@@ -1,0 +1,180 @@
+:root {
+    --warm-cream: #f3e5d8;
+    --light-cherry: #fff7fc;
+    --cherry: #752c4b;
+    --brown: #733c2d;
+    --gray: #4B4845;
+    --dary-gray: #2e2d2b;
+}
+
+@font-face {
+    font-family: 'Outfit';
+    src: url('./assets/fonts/outfit/Outfit-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Young serif';
+    src: url('./assets/fonts/young-serif/YoungSerif-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+*, *>* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Outfit', sans-serif;
+    color: var(--gray);
+    font-size: 1.2rem;
+}
+
+.receta__intro__title, .section__title {
+    font-family: 'Young Serif';
+}
+
+.section {
+    padding: 1.8rem; 
+}
+
+hr {
+    margin-inline: 1.8rem;
+    color: #c4c4c4;
+}
+
+.receta__intro__title {
+    color: var(--dary-gray);
+    font-size: 2rem;
+}
+
+
+.section__title {
+    color: var(--brown);
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.list {
+    /* display: inline; */
+    padding-inline-start: 2.2rem;
+    margin-block: 1rem 0;
+}
+
+.item {
+    font-size: 1.1rem;
+    margin-block: .6rem;
+}
+
+
+/* ****** Wrapper de la receta ****** */
+.receta {
+    padding-block: 1.8rem;
+}
+
+/* ||||||||||| HEADER RECETA |||||||||| */
+.receta__img {
+    max-width: 100%;
+}
+
+.receta__header__info {
+    /* background-color: var(--cherry); */
+    color: var(--gray);
+    display: block;
+    
+    
+    font-size: .8rem;
+    font-weight: 200;
+    
+    margin: 1rem 1.8rem;
+
+}
+
+/* ||||||||||| INTRO Sección |||||||||| */
+
+.receta__intro__description {
+    font-size: 1.2rem;
+    margin-block: 1.2rem;
+}
+
+/* ||||||||||| PREPARACIÓN Sección |||||||||| */
+
+.preparacion {
+    background-color: var(--light-cherry);
+    margin: 0rem 1.8rem;
+    border-radius: .8rem;
+}
+
+.preparacion__title {
+    color: var(--cherry);
+    font-size: 1.4rem;
+
+}
+
+/* ||||||||||| NUTRICIÓN Sección |||||||||| */
+
+.table, .table__row{
+    text-align: left;
+    border-bottom: 1px solid #c4c4c4;
+    border-collapse: collapse;
+}
+
+.table {
+    padding: 1rem;
+    width: 100%;
+    margin-top: 1.5rem;
+    
+}
+
+
+.table__header {
+    font-weight: 400;
+    padding: 1rem;
+    
+}
+
+.table__data{
+    color: var(--brown);
+    font-weight: 600;
+}
+
+@media (min-width: 768px) {
+
+html {
+
+    font-size: inherit;
+}
+
+/* ****** Wrapper de la receta ****** */
+body {
+    background-color: var(--warm-cream);
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+
+}
+.receta {
+    margin: 1.8rem;
+    padding: 1rem;
+    background-color: white;
+
+    width: 1000px;
+    max-width: 90%;
+
+
+}
+
+.receta, .receta__img {
+    border-radius: .8rem;
+
+}
+.receta__header {
+    padding: 1.8rem; 
+    padding-top: 0;
+}
+
+}

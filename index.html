@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./styles.css">
+
+  <title>Frontend Mentor | Recipe page</title>
+
+
+</head>
+
+<body>
+
+  <main class="main">
+
+    <h1 aria-label="Recetas de cocina"></h1>
+    <!-- Receta -->
+    <article class="receta">
+      <!-- Receta header -->
+      <header class="receta__header">
+        <p class="receta__header__info">Publicado el <time datetime="2024-06-19" class="datetime">19 de Junio de 2024</time> por <span class="author">Chef María</span></p>
+        <img src="./assets/images/image-omelette.jpeg" alt="" class="receta__img">
+      </header>
+
+      <!-- Sección Introducción -->
+      <section class="section receta__intro">
+        <h2 class="receta__intro__title">Simple Omelette Recipe</h2>
+        <p class="receta__intro__description">An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked to perfection, optionally filled with your choice of cheese, vegetables, or meats.</p>
+      </section>
+
+      <!-- Sección Preparación -->
+      <section class="section preparacion">
+        <h4 class="preparacion__title">Preparation time</h4>
+        <ul class="preparacion__items list">
+          <li class="preparacion__item item"><strong>Total:</strong> Approximately 10 minutes</li>
+          <li class="preparacion__item item"><strong>Preparation:</strong> 5 minutes</li>
+          <li class="preparacion__item item"><strong>Cooking:</strong> 5 minutes</li>
+        </ul>
+      </section>
+
+      <!-- Sección Ingredientes -->
+      <section class="section ingredientes">
+        <h3 class="section__title">Ingredients</h3>
+        <ul class="ingredientes__items list">
+          <li class="igredientes__item item">2-3 large eggs</li>
+          <li class="igredientes__item item">Salt, to taste</li>
+          <li class="igredientes__item item">Pepper, to taste</li>
+          <li class="igredientes__item item">1 tablespoon of butter or oil</li>
+          <li class="igredientes__item item">Optional fillings: cheese, diced vegetables, cooked meats, herbs</li>
+        </ul>
+      </section>
+
+      <hr>
+
+      <!-- Sección Intrucciones -->
+      <section class="section instrucciones">
+        <h3 class="section__title">Instructions</h3>
+        <ol class="instrucciones__items list">
+          <li class="instrucciones__item item"><strong>Beat the eggs:</strong> In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed.
+            You can add a tablespoon of water or milk for a fluffier texture.</li>
+          <li class="instrucciones__item item"><strong>Heat the pan:</strong> Place a non-stick frying pan over medium heat and add butter or oil.</li>
+          <li class="instrucciones__item item"><strong>Cook the omelette:</strong> Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure
+            the eggs evenly coat the surface.</li>
+          <li class="instrucciones__item item"><strong>Add fillings (optional):</strong> When the eggs begin to set at the edges but are still slightly runny in the
+            middle, sprinkle your chosen fillings over one half of the omelette.</li>
+          <li class="instrucciones__item item"><strong>Fold and serve:</strong> As the omelette continues to cook, carefully lift one edge and fold it over the
+            fillings. Let it cook for another minute, then slide it onto a plate.</li>
+          <li class="instrucciones__item item"><strong>Enjoy:</strong> Serve hot, with additional salt and pepper if needed.</li>
+        </ol>
+      </section>
+
+      <hr>
+
+      <!-- Sección Nutrición -->
+      <section class="section nutricion">
+        <h3 class="section__title">Nutrition</h3>
+        <p>The table below shows nutritional values per serving without the additional fillings.</p>
+
+        <table class="table">
+          <tr class="table__row">
+            <th class="table__header">Calories</th>
+            <td class="table__data">277kcal</td>
+          </tr>
+
+          <tr class="table__row">
+            <th class="table__header">Carbs</th>
+            <td class="table__data">0g</td>
+          </tr>
+
+          <tr class="table__row">
+            <th class="table__header">Protein</th>
+            <td class="table__data">20g</td>
+          </tr>
+
+          <tr class="table__row">
+            <th class="table__header">Fat</th>
+            <td class="table__data">22g</td>
+          </tr>
+        </table>
+      </section>
+
+    </article>
+
+
+  </main>
+
+  <script src="./main.js"></script>
+</body>
+
+</html>
